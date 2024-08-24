@@ -47,28 +47,27 @@ main {
                 h2 {
                     font-size: 20px;
                 }
+
                 .wrapper {
-                    margin: 0 auto;
+                    // width: 50px;
+                    // margin: 0 auto;
+                    // display: flex;
                     padding: 20px;
-                    flex-wrap: wrap ;
-                }
-        
-                .section-heading {
-                    font-size: 24px;
-                    color: #1a73e8;
-                    margin-bottom: 20px;
                 }
         
                 .apartment-list {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    flex-wrap: wrap;
+                    // display: flex;
+                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
                     gap: 20px;
                 }
         
                 .apartment-item {
                     background-color: #333;
+                    flex-wrap: wrap;
                     border-radius: 8px;
-                    overflow: hidden;
+                    overflow: hidde;
                     position: relative;
                     color: white;
                     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -91,7 +90,7 @@ main {
                 }
         
                 .apartment-price {
-                    font-size: 16px;
+                    font-size: 12px;
                     font-weight: bold;
                     margin-bottom: 10px;
                 }
@@ -100,6 +99,7 @@ main {
                     font-size: 10px;
                     color: #ccc;
                 }
+        
                 .btn-details {
                     position: absolute;
                     bottom: 15px;
@@ -111,6 +111,5 @@ main {
                     border-radius: 4px;
                     font-size: 14px;
                 }
-        
         }
 }

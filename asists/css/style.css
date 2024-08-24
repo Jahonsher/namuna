@@ -40,24 +40,19 @@ main .birinchi_taomlar h2 {
   font-size: 20px;
 }
 main .birinchi_taomlar .wrapper {
-  margin: 0 auto;
   padding: 20px;
-  flex-wrap: wrap;
-}
-main .birinchi_taomlar .section-heading {
-  font-size: 24px;
-  color: #1a73e8;
-  margin-bottom: 20px;
 }
 main .birinchi_taomlar .apartment-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 20px;
 }
 main .birinchi_taomlar .apartment-item {
   background-color: #333;
+  flex-wrap: wrap;
   border-radius: 8px;
-  overflow: hidden;
+  overflow: hidde;
   position: relative;
   color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,7 +72,7 @@ main .birinchi_taomlar .apartment-title {
   margin-bottom: 10px;
 }
 main .birinchi_taomlar .apartment-price {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   margin-bottom: 10px;
 }
