@@ -15,7 +15,6 @@ body {
                     }
         .splide {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            // width: 95%;
             border-radius: 10px;
             margin: 0 auto;
                 .splide__track{
@@ -53,6 +52,7 @@ main {
                     // margin: 0 auto;
                     // display: flex;
                     padding: 20px;
+                    background-color: rgb(255, 246, 228);
                 }
         
                 .apartment-list {
@@ -66,11 +66,11 @@ main {
                 .apartment-item {
                     background-color: #333;
                     flex-wrap: wrap;
-                    border-radius: 8px;
                     overflow: hidde;
                     position: relative;
                     color: white;
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                border-radius: 10px;
                 }
         
                 .apartment-image {
@@ -78,6 +78,7 @@ main {
                     height: 100px;
                     object-fit: cover;
                     filter: brightness(70%);
+                    border-radius: 10px 10px 0px 0px;
                 }
         
                 .apartment-info {
