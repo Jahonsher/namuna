@@ -28,70 +28,93 @@ body {
   height: 200px;
 }
 
-main {
-  width: 95%;
-  margin: 0 auto;
+#product-cards {
+  padding: 5% 10%;
 }
-main .birinchi_taomlar {
-  padding-top: 25px;
-  margin: 0 auto;
+
+#footer {
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
-main .birinchi_taomlar h2 {
-  font-size: 20px;
+
+.filter-btns {
+  text-align: center;
 }
-main .birinchi_taomlar .wrapper {
-  padding: 20px;
-  background-color: rgb(255, 246, 228);
-}
-main .birinchi_taomlar .apartment-list {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 20px;
-}
-main .birinchi_taomlar .apartment-item {
-  background-color: #333;
-  flex-wrap: wrap;
-  overflow: hidde;
+
+.filter-btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 2px;
   position: relative;
-  color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
-main .birinchi_taomlar .apartment-image {
-  width: 100%;
-  height: 100px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  filter: brightness(70%);
-  border-radius: 10px 10px 0px 0px;
-}
-main .birinchi_taomlar .apartment-info {
-  padding: 15px;
-}
-main .birinchi_taomlar .apartment-title {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-main .birinchi_taomlar .apartment-price {
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-main .birinchi_taomlar .apartment-location {
-  font-size: 10px;
-  color: #ccc;
-}
-main .birinchi_taomlar .btn-details {
+
+.filter-btn::after {
+  content: "";
   position: absolute;
-  bottom: 15px;
-  right: 15px;
-  background-color: #ff7a00;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  font-size: 14px;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #555;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-btn:hover {
+  color: #555;
+}
+
+.filter-btn:hover::after {
+  width: 100%;
+}
+
+/* active button */
+.active-btn {
+  color: #555;
+}
+
+.active-btn::after {
+  width: 100%;
+}
+
+.canvas-title {
+  text-align: center;
+}
+
+/*     Shopping Cart     */
+.btn-purchase {
+  text-align: center;
+  margin: auto;
+  padding: 2%;
+  width: 50%;
+}
+
+#shopping-cart {
+  padding: 5% 5%;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.up-icon {
+  color: black;
+  position: fixed;
+  float: right;
+  z-index: 1;
+  left: 95%;
+  top: 85%;
+  font-size: 2rem;
 }
 
 footer {
