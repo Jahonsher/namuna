@@ -152,3 +152,9 @@ function updateCartTotal(){
     document.getElementsByClassName('cart-total-price')[0].innerText = 'Rs '+ total + '.00';
  
 }
+
+
+
+
+
+

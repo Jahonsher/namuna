@@ -1,191 +1,204 @@
 body {
-    background-color: rgb(255, 246, 228);
+  background-color: rgb(255, 246, 228);
 }
+
 .container {
-    width: 95% !important;
+  width: 95% !important;
+  margin: 0 auto;
+
+  // HEADER QISIM BOSHLANDI
+  h1 {
+    text-align: center;
+    font-size: 27px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    // font-style: normal;
+  }
+
+  .splide {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
     margin: 0 auto;
-    // HEADER QISIM BOSHLANDI
-        h1 {
-            text-align: center;
-            font-size: 27px;
-            font-family: "Dancing Script", cursive;
-            font-optical-sizing: auto;
-            font-weight: bold;
-            // font-style: normal;
-                    }
-        .splide {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            border-radius: 10px;
-            margin: 0 auto;
-                .splide__track{
-                    border-radius: 10px;
-                    margin-top: 25px;
-                    height: 200px;
-                        ul {
-                            // width: 100%;
-                                .splide__slide {
-                                        img {
-                                            width: 100%;
-                                            height: 200px;
-                                        }
-                                }
-                        }
-                }
-                    
+
+    .splide__track {
+      border-radius: 10px;
+      margin-top: 25px;
+      height: 200px;
+
+      ul {
+
+        // width: 100%;
+        .splide__slide {
+          img {
+            width: 100%;
+            height: 200px;
+          }
         }
+      }
+    }
+
+  }
 
 }
 
 // MAIN QISIM BOSHLANDI
-#product-cards{
-    padding: 5% 10%;
-  }
-  
-  #footer{
-   margin-bottom: 2%;
-   margin-top: 2%;
-    
-  }
-  .filter-btns{
-    text-align: center;
-  }
-  .filter-btn{
-    background: none;
-    cursor: pointer;
-    border: none;
-    font-family: inherit;
-    text-transform: uppercase;
-    display: inline-block;
-    margin: 10px 30px;
-    font-size: 16px;
-    color: #d3d3d3;
-    font-weight: 600;
-    letter-spacing: 2px;
-    position: relative;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  .filter-btn::after{
-    content: "";
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
-    height: 2px;
-    width: 0;
-    background-color: #555;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out
-  }
-  .filter-btn:hover{
-    color: #555;
-  }
-  .filter-btn:hover::after{
-    width: 100%;
-  }
-  /* active button */
-  .active-btn{
-    color: #555;
-  }
-  .active-btn::after{
-    width: 100%;
-  }
-  
-  .canvas-title{
-    text-align: center;
-  }
-  
-  
-  
-  /*     Shopping Cart     */
-  
-   .btn-purchase{
-     text-align: center;
-     margin: auto;
-     padding: 2%;
-     width: 50%;
-   }
-  
-   #shopping-cart{
-     padding: 5% 5%;
-   }
-  
-   .cart-total{
-     text-align: right;
-     font-size: 1.3rem;
-   }
-  
-  .up-icon{
-     color: black;
-     position: fixed;
-     float: right;
-     z-index: 1;
-     left: 95%;
-     top: 85%;
-     font-size: 2rem;
-   }
+#product-cards {
+  padding: 5% 10%;
+}
+
+
+#footer {
+  margin-bottom: 2%;
+  margin-top: 2%;
+
+}
+
+.filter-btns {
+  text-align: center;
+}
+
+.filter-btn {
+  background: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 16px;
+  color: #d3d3d3;
+  font-weight: 600;
+  letter-spacing: 2px;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.filter-btn::after {
+  content: "";
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  height: 2px;
+  width: 0;
+  background-color: #555;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out
+}
+
+.filter-btn:hover {
+  color: #555;
+}
+
+.filter-btn:hover::after {
+  width: 100%;
+}
+
+/* active button */
+.active-btn {
+  color: #555;
+}
+
+.active-btn::after {
+  width: 100%;
+}
+
+.canvas-title {
+  text-align: center;
+}
+
+
+
+/*     Shopping Cart     */
+
+.btn-purchase {
+  text-align: center;
+  margin: auto;
+  padding: 2%;
+  width: 50%;
+}
+
+#shopping-cart {
+  padding: 5% 5%;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 1.3rem;
+}
+
+.up-icon {
+  color: black;
+  position: fixed;
+  float: right;
+  z-index: 1;
+  left: 95%;
+  top: 85%;
+  font-size: 2rem;
+}
 
 // FOOTER START
 footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 .footer-container {
-    // display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px;
+  // display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
 }
 
 .footer-container .map a img {
-    border-radius: 8px;
-    width: 100%;
+  border-radius: 8px;
+  width: 100%;
 }
 
 .contact-info {
-    max-width: 300px;
+  max-width: 300px;
 }
 
 .contact-info h3 {
-    margin-top: 0;
-    font-size: 20px;
+  margin-top: 0;
+  font-size: 20px;
 }
 
 .contact-info p {
-    margin: 8px 0;
-    font-size: 16px;
+  margin: 8px 0;
+  font-size: 16px;
 }
 
 .contact-info a {
-    color: #ff6600;
-    text-decoration: none;
+  color: #ff6600;
+  text-decoration: none;
 }
 
 .contact-info a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-note {
-    text-align: center;
-    border-top: 1px solid #555;
-    padding-top: 10px;
-    font-size: 14px;
+  text-align: center;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  font-size: 14px;
 }
 
 .footer-note a {
-    color: #ff6600;
-    text-decoration: none;
-    font-weight: bold;
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-note a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
